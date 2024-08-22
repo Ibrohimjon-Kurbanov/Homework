@@ -1,0 +1,64 @@
+@import "./global.css";
+/* BLOG */
+.active {
+  color: var(--primary);
+}
+.blog {
+  padding-top: 10.6rem;
+  padding-bottom: 5.3rem;
+}
+.blog__container {
+  width: 100%;
+  max-width: 782px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+.blog__box {
+  max-width: 670px;
+}
+.blog__heading {
+  font-size: 4.4rem;
+  font-weight: 900;
+  line-height: 60px;
+  margin-bottom: 5.5rem;
+}
+.blog__title {
+  font-size: 3rem;
+  font-weight: 550;
+  line-height: 44px;
+  margin-bottom: 1.6rem;
+}
+.blog__date {
+  color: rgb(134, 149, 164);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 1.5rem;
+}
+.blog__date span {
+  color: rgb(33, 36, 61);
+}
+.blog__description {
+  margin-bottom: 2.9rem;
+}
+.blog__line {
+  border: 1px solid rgb(224, 224, 224);
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 815px) {
+  .blog {
+    padding-top: 2.4rem;
+  }
+  .blog__heading {
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+  }
+  .blog__title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 2.6rem;
+  }
+  .blog__line {
+    margin-bottom: 1.8rem;
+  }
+}

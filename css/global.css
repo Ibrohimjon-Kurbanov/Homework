@@ -1,0 +1,162 @@
+@import "./global.css";
+@import "./button.css";
+@import "./variables.css";
+/* GLOBAL */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.2s linear;
+}
+a {
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  display: flex;
+  object-fit: cover;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+body {
+  font-family: var(--main-font-family);
+  color: var(--dark);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 958px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+/* MAIN */
+.main {
+  flex-grow: 1;
+  margin-top: 7.4rem;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  padding-top: 2.7rem;
+  padding-bottom: 1.5rem;
+}
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+}
+.sitenav__list {
+  display: flex;
+  gap: 3.3rem;
+}
+.sitenav__link {
+  color: var(--dark);
+  font-weight: 550;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+#menu {
+  color: rgb(33, 36, 61);
+  font-size: 5rem;
+  cursor: pointer;
+  display: none;
+}
+/* FOOTER */
+.footer {
+  padding-top: 5.1rem;
+  padding-bottom: 5.4rem;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-bottom: 2.6rem;
+}
+.footer__bottom {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 21px;
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .container {
+    padding: 0 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 375px) {
+  #menu {
+    display: block;
+  }
+  .sitenav {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 7.9rem;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    padding: 0;
+    align-items: flex-start;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transform: translate(100%);
+  }
+  .sitenav.show-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0%);
+  }
+  #menu.bx-menu {
+    transform: rotate(180deg);
+    transition: 0.3s linear;
+  }
+  .sitenav__list {
+    flex-direction: column;
+    height: 100%;
+    padding: 6.4rem 2.5rem 0 3.9rem;
+    flex-flow: column;
+    gap: 2.4rem;
+    background-color: #333a44;
+  }
+  .sitenav__link {
+    color: #fff;
+  }
+}

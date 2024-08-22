@@ -1,0 +1,10 @@
+.hero__btn {
+  display: inline-block;
+  color: #fff;
+  padding: 9px 2.1rem 9px 2.1rem;
+  border-radius: 2px;
+  background: var(--primary);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 29px;
+}
